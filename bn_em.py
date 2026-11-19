@@ -1,7 +1,7 @@
-from sklearn.model_selection import train_test_split
 import numpy as np
 import pandas as pd
-import bn_em
+from itertools import product
+from scipy.special import logsumexp
 
 def fit_missing_bn_em(
     data,
